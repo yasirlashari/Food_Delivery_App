@@ -1,36 +1,50 @@
-.header{
+.header {
     height: 34vw;
-    margin:  30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size: contain;
+    margin: 40px auto;
+    background: url('/header_img.png') no-repeat center center;
+    background-size: cover; /* Ensures the background image covers the entire area */
     position: relative;
 }
-.header-contents{
+
+.header-contents {
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 1.5vw;
-    max-width: 50%;
-    bottom: 10%;
-    left: 6vw;
+    max-width: 40%;
+    bottom: 3%;
+    left: 2vw;
     animation: fadeIn 3s;
+    background: rgba(0, 0, 0, 0.4); /* Optional: Adds a semi-transparent overlay behind text */
+    padding: 1vw; /* Optional: Adds padding to the content */
+    border-radius: 10px; /* Optional: Rounds the corners of the content box */
 }
-.header-contents h2{
+
+.header-contents h2 {
     font-weight: 500;
     color: white;
-    font-size: max(4.5vw,22px);
+    font-size: max(4.5vw, 22px);
 }
-.header-contents p{
+
+.header-contents p {
     color: white;
     font-size: 1vw;
 }
-.header-contents button{
+
+.header-contents button {
     border: none;
-    color: #747474;
+    color: #333; /* Improved contrast */
     font-weight: 500;
     padding: 1vw 2.3vw;
     background-color: white;
-    font-size: max(1vw,13px);
+    font-size: max(1vw, 13px);
     border-radius: 50px;
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.header-contents button:hover {
+    background-color: #f0f0f0; /* Subtle hover effect */
+    color: #000; /* Changes text color on hover */
 }
