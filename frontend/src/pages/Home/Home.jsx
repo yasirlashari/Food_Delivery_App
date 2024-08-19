@@ -13,8 +13,6 @@ const Home = () => {
       <Exploremenu category={category} setCategory={setCategory} />
       <FoodDisplay category={category} />
     </div>
-    
   );
 }
-
 export default Home;

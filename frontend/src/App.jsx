@@ -16,6 +16,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/placeorder" element={<PlaceOrder />} />
+        <Route path="/menu" element={<Exploremenu category="All" setCategory={() => {}} />} />
       </Routes>
       
     </div>
