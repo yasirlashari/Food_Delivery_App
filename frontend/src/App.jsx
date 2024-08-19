@@ -1,10 +1,11 @@
+// App.jsx
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Cart from './pages/Cart/Cart';
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
-import NotFound from './pages/NotFound/NotFound'; // Ensure this component exists
+import Exploremenu from './components/Exploremenu/Exploremenu';
 
 const App = () => {
   return (
@@ -15,8 +16,8 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/placeorder" element={<PlaceOrder />} />
-        <Route path="*" element={<NotFound />} /> {/* Handles undefined routes */}
       </Routes>
+      
     </div>
   );
 }
