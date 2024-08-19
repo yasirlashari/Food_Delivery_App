@@ -14,8 +14,7 @@ const Exploremenu = ({ category, setCategory }) => {
     <div className='explore-menu' id='explore-menu'>
       <h1>Explore Our Menu</h1>
       <p className="explore-menu-text">
-        Explore our menu and discover a world of flavors! From mouthwatering classics to bold new creations, each dish is crafted to satisfy your cravings and elevate your dining experience.
-        Dive in and find your next favorite meal. Unlock a culinary adventure with our menu! Whether you're in the mood for comforting classics or something new and exciting, each dish is designed to delight your taste buds. Explore now and let your cravings lead the way!
+        Explore our menu and discover a world of flavors! From mouthwatering classics to bold new creations, each dish is crafted to satisfy your cravings and elevate your dining experience. Dive in and find your next favorite meal. Unlock a culinary adventure with our menu! Whether you're in the mood for comforting classics or something new and exciting, each dish is designed to delight your taste buds. Explore now and let your cravings lead the way!
       </p>
       <div className="explore-menu-list">
         {menu_list.length > 0 ? (
