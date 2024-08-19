@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import Cart from './pages/Cart/Cart';
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 import Exploremenu from './components/Exploremenu/Exploremenu';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/placeorder" element={<PlaceOrder />} />
         <Route path="/menu" element={<Exploremenu category="All" setCategory={() => {}} />} />
       </Routes>
-      
+      <Footer />
     </div>
   );
 }

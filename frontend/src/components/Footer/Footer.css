@@ -1,0 +1,56 @@
+/* components/Footer/Footer.css */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Reduced padding to fit better in a fixed footer */
+    background-color: black;
+    border-top: 1px solid #e2e2e2;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the footer stays on top of other content */
+  }
+  
+  .footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-logo {
+    width: 100px; /* Adjust the width as needed */
+  }
+  
+  .footer-description {
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+  }
+
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  .footer-right p {
+    margin: 9px 26px;
+  }
+  
+  /* Add padding to the bottom of the body to prevent content from being hidden behind the footer */
+  body {
+    margin: 0;
+    padding-bottom: 70px; /* Adjust based on the footer height */
+  }
+  
